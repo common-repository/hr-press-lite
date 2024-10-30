@@ -1,0 +1,17 @@
+# ignore node dependency directories (used by grunt)
+node_modules/
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!.scss-lint.yml
+!README.md
+!CHANGELOG.md
+!composer.json
+
+# track these themes
+!wp-content/themes/theme_name/

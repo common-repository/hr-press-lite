@@ -1,0 +1,144 @@
+@media only screen and (max-width: 600px) {
+    .card-aside-wrap {
+        display: unset;
+    }
+  }
+
+  .wider .profile-ud-label {
+    width: 200px;
+}
+
+  .nav-tabs .nav-link:after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: inherit;
+    background: inherit;
+    opacity: 0;
+}
+.card {
+    max-width: inherit;
+}
+
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img, a:focus .plugin-icon {
+    box-shadow: unset;
+}
+
+.user-avatar-xl,
+.user-avatar.xl {
+    height: 150px;
+    width: 150px;
+}
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus, .form-control:focus{
+    color: #3c4d62;
+    background-color: #fff;
+    border-color: #854fff;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(133,79,255,.1);
+}
+
+input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week] {
+    display: block;
+    width: 100%;
+    padding: .4375rem 1rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #3c4d62;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dbdfea;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.col-form-label.required:after, .form-label.required:after {
+    content: "*";
+    margin-left: .25rem;
+    color: #d63939;
+}
+
+/* Calendar */
+
+.calendar {
+    display: flex;
+    flex-flow: column;
+}
+.calendar .header .month-year {
+    font-size: 20px;
+    font-weight: bold;
+    color: #636e73;
+    padding: 20px 0;
+}
+.calendar .days {
+    display: flex;
+    flex-flow: wrap;
+}
+.calendar .days .day_name {
+    width: calc(100% / 7);
+    /* border-right: 1px solid rgb(187, 160, 252); */
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    /* background-color: rgb(133, 79, 255); */
+}
+.calendar .days .day_name:nth-child(7) {
+    border: none;
+}
+.calendar .days .day_num {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% / 7);
+    border-right: 1px solid #e6e9ea;
+    border-bottom: 1px solid #e6e9ea;
+    padding: 15px;
+    font-weight: bold;
+    color: #7c878d;
+    cursor: pointer;
+    min-height: 20px;
+}
+.calendar .days .day_num span {
+    display: inline-flex;
+    width: 30px;
+    font-size: 14px;
+}
+.calendar .days .day_num .event {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    background-color: #f7c30d;
+    color: #fff;
+    word-wrap: break-word;
+}
+.calendar .days .day_num .event.success {
+    background-color: rgb(30, 224, 172);
+}
+.calendar .days .day_num .event.info {
+    background-color: rgb(9, 194, 222);
+}
+.calendar .days .day_num .event.danger {
+    background-color: rgb(232, 83, 71);
+}
+.calendar .days .day_num .event.warning {
+    background-color: rgb(244, 189, 14);
+}
+.calendar .days .day_num:nth-child(7n+1) {
+    border-left: 1px solid #e6e9ea;
+}
+.calendar .days .day_num:hover {
+    background-color: #fdfdfd;
+}
+.calendar .days .day_num.ignore {
+    background-color: #fdfdfd;
+    color: #ced2d4;
+    cursor: inherit;
+}
+.calendar .days .day_num.selected {
+    background-color: #f1f2f3;
+    cursor: inherit;
+}
